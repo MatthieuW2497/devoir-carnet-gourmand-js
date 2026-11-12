@@ -1,0 +1,217 @@
+/* ===== Base ===== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    font-size: 15px;
+    color: #111827;
+    background-color: #f6f7fb;
+}
+
+
+/* ===== Header ===== */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.site-header p {
+    margin: 0;
+}
+
+.site-title {
+    font-weight: bold;
+}
+
+.site-subtitle {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* ===== Mise en page : 2 colonnes ===== */
+
+.layout {
+    max-width: 1050px;
+    margin: 24px auto;
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 16px;
+}
+
+/* ===== Cartes ===== */
+
+.card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 16px;
+}
+
+.intro {
+    color: #6b7280;
+}
+
+/* ===== Zone recette ===== */
+
+.recipe {
+    background-color: #fafafa;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 14px;
+}
+
+
+/* ===== Formulaire : champs ===== */
+
+.form-group {
+    margin-bottom: 14px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 15px;
+    color: #111827;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.hint {
+    margin: 6px 0 0;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* ===== Formulaire : bouton Publier ===== */
+
+.btn-publish {
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-publish:hover {
+    opacity: 0.9;
+}
+
+/* ===== Message d'erreur ===== */
+
+.form-error {
+    margin: 12px 0 0;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background-color: #fee2e2;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+.form-error:empty {
+    display: none;
+}
+
+/* ===== Liste des commentaires ===== */
+
+.comment-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.comment {
+    padding: 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    background-color: #ffffff;
+}
+
+.comment-author {
+    margin: 0 0 8px;
+    font-weight: bold;
+}
+
+.comment-text {
+    margin: 0 0 10px;
+}
+
+/* ===== Bouton Supprimer ===== */
+
+.btn-delete {
+    padding: 6px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #dc2626;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-delete:hover {
+    background-color: #fee2e2;
+}
+
+/* ===== Footer ===== */
+
+.site-footer {
+    padding: 16px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+/* ===== Responsive : 1 colonne sous 900px ===== */
+
+@media (max-width: 900px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
