@@ -1,4 +1,3 @@
-console.log("Le script est bien chargé !");
 
 const form = document.querySelector("#comment-form");
 const authorInput = document.querySelector("#author");
